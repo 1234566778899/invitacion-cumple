@@ -20,9 +20,11 @@ body {
 .name-tono {
     color: rgb(209, 21, 21);
 }
-.form{
+
+.form {
     padding: 0px 40px;
 }
+
 .entradas {
     font-size: 20px;
     margin-top: 10px;
@@ -50,7 +52,7 @@ body {
     background-color: rgb(39, 38, 38);
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:765px) {
     .title {
         font-size: 40px;
         margin-top: 5px;

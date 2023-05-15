@@ -15,7 +15,6 @@ function eliminarInvitado(id) {
     obtenerDatos();
 }
 function obtenerDatos() {
-    $('.puntuacion').html('');
     db.collection("Invitados").get().then((querySnapshot) => {
         $('.tabla').html('');
         querySnapshot.forEach((doc) => {
