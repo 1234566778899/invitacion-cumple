@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+            rel="stylesheet">
+        <title>Invitación a mi cumple</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="container"></div>
+        </nav>
+        <div class="container">
+            <div class="fondo">
+                <br>
+                <h1 class="text-center title">Te invito a festejar mi <span>Cumple</span></h1>
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <br>
+                        <p class="parrofo">Te espero el 20 de mayo desde las 7pm
+                            hasta las 5am en mi tono <span class="name-tono">Valetodo
+                                DownTown<strong class="text-dark">. No faltes !!</strong></span>
+                        </p>
+                        <div class="form">
+                            <input type="text" class="w-100 entradas"
+                                placeholder="Nombre completo" id="nombre">
+                            <button class="btn-enviar boton" onclick="aceptarInvitacion()">Aceptar invitación</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+        <script
+            src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+        <script src="./scripts/init-firebase.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+
+</html>
