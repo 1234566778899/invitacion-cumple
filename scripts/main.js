@@ -17,19 +17,19 @@ function eliminarInvitado(id) {
 function obtenerDatos() {
     db.collection("Invitados").get().then((querySnapshot) => {
         $('.tabla').html('');
-        let orden = 1;
-        querySnapshot.forEach((doc) => {
+        for (let i = 0; i < querySnapshot.docs.length; i++) {
+            let doc = querySnapshot.docs[i];
             $('.tabla').append(`
            <tr>
-           <td class="fw-light">${orden}</td>
+           <td class="fw-light">${i + 1}</td>
            <td>${doc.data().nombre}</td>
            <td >
            <i class="fa-sharp fa-solid fa-trash text-danger" id="${doc.id}" onclick="eliminarInvitado('${doc.id}')"></i>
            </td>
            </tr>
            `);
-            orden++;
-        });
+        }
+
 
     }).catch((error) => {
         console.error("Error obteniendo los documentos: ", error);
