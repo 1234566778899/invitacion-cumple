@@ -17,15 +17,18 @@ function eliminarInvitado(id) {
 function obtenerDatos() {
     db.collection("Invitados").get().then((querySnapshot) => {
         $('.tabla').html('');
+        let orden = 1;
         querySnapshot.forEach((doc) => {
             $('.tabla').append(`
            <tr>
-           <td class="fw-light">${doc.data().nombre}</td>
+           <td class="fw-light">${orden}</td>
+           <td>${doc.data().nombre}</td>
            <td >
            <i class="fa-sharp fa-solid fa-trash text-danger" id="${doc.id}" onclick="eliminarInvitado('${doc.id}')"></i>
            </td>
            </tr>
            `);
+            orden++;
         });
 
     }).catch((error) => {
