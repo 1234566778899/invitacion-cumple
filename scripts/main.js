@@ -6,7 +6,7 @@ function aceptarInvitacion() {
     } else {
         agregarDatos(nombre.value);
         nombre.value = '';
-        alert('Felicidades, Te espero el sabado 20');
+        alert('Felicidades, Te espero este sabado 17');
     }
     nombre.focus();
 }
