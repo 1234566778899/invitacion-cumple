@@ -5,10 +5,12 @@
     color: white;
     border-color: black;
     text-shadow: 4px 4px black;
+    padding: 40px 0px;
 }
 
 body {
     font-family: 'Mochiy Pop One', sans-serif;
+    background-color: black;
 }
 
 .title {
